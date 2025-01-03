@@ -23,11 +23,11 @@ void solution()
 
     sort(v.begin(), v.end());
 
-    for(int t : v)
+    for (int t : v)
     {
         int passTime;
 
-        if(t-prevTime >= 40)
+        if (t - prevTime >= 40)
             passTime = 40;
         else
             passTime = t - prevTime;
