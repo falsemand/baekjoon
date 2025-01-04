@@ -8,7 +8,7 @@ void solution()
 {
     cin >> t;
 
-    while(t--)
+    while (t--)
     {
         int num;
         cin >> num;
@@ -16,9 +16,9 @@ void solution()
         int answer = 0;
         string s = to_string(num);
 
-        while(s != "6174")
+        while (s != "6174")
         {
-            while(s.size() != 4)
+            while (s.size() != 4)
             {
                 s = "0" + s;
             }
