@@ -10,14 +10,14 @@ void solution()
 {
     cin >> m >> n;
 
-    while(n--)
+    while (n--)
     {
         string s;
         int num;
-        
+
         cin >> s >> num;
 
-        if(s=="MOVE")
+        if (s == "MOVE")
         {
             switch (direction)
             {
@@ -38,13 +38,13 @@ void solution()
             }
         }
 
-        else if(s =="TURN")
+        else if (s == "TURN")
         {
             if (num == 0)
             {
                 direction--;
 
-                if(direction < 0)
+                if (direction < 0)
                     direction = 3;
             }
 
@@ -61,7 +61,7 @@ void solution()
             flag = false;
     }
 
-    if(flag)
+    if (flag)
         cout << x << " " << y << "\n";
     else
         cout << -1 << "\n";
