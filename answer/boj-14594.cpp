@@ -11,7 +11,7 @@ void solution()
 
     vector<int> walls(n - 1, 1);
 
-    while(m--)
+    while (m--)
     {
         cin >> x >> y;
 
@@ -21,7 +21,7 @@ void solution()
 
     for (int i = 0; i < n - 1; i++)
     {
-        if (walls[i]==1)
+        if (walls[i] == 1)
             cnt++;
     }
 
