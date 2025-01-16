@@ -3,6 +3,7 @@
         "iostream": "cpp",
         "numeric": "cpp",
         "iosfwd": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "xutility": "cpp"
     }
 }
