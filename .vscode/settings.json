@@ -4,6 +4,7 @@
         "numeric": "cpp",
         "iosfwd": "cpp",
         "ratio": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "xiosbase": "cpp"
     }
 }
