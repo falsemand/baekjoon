@@ -5,6 +5,7 @@
         "iosfwd": "cpp",
         "ratio": "cpp",
         "xutility": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "deque": "cpp"
     }
 }
