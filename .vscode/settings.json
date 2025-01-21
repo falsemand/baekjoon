@@ -6,6 +6,7 @@
         "ratio": "cpp",
         "xutility": "cpp",
         "xiosbase": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "vector": "cpp"
     }
 }
