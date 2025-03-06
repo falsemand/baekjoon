@@ -92,5 +92,6 @@
         "coroutine": "cpp",
         "resumable": "cpp"
     },
-    "files.autoGuessEncoding": false
+    "files.autoGuessEncoding": false,
+    "cmake.outputLogEncoding": "utf-8"
 }
