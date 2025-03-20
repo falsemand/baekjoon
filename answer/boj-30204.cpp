@@ -16,7 +16,7 @@ void solution()
         sum += num;
     }
 
-    if(0 == sum % x)
+    if (0 == sum % x)
         cout << 1 << "\n";
     else
         cout << 0 << "\n";
