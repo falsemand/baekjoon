@@ -6,7 +6,7 @@ int m, f;
 
 void solution()
 {
-    while(true)
+    while (true)
     {
         cin >> m >> f;
 
