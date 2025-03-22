@@ -8,7 +8,7 @@ void solution()
 {
     cin >> n;
 
-    while(n--)
+    while (n--)
     {
         int num;
         cin >> num;
