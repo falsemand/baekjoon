@@ -2,21 +2,30 @@
 
 using namespace std;
 
-int answer, n;
+char c;
 
 void solution()
 {
-    cin >> n;
+    cin >> c;
 
-    while(n--)
+    switch (c)
     {
-        int num;
-        cin >> num;
-
-        answer += num;
+        case 'M':
+            cout << "MatKor\n";
+            break;
+        case 'W':
+            cout << "WiCys\n";
+            break;
+        case 'C':
+            cout << "CyKor\n";
+            break;
+        case 'A':
+            cout << "AlKor\n";
+            break;
+        case '$':
+            cout << "$clear\n";
+            break;
     }
-
-    cout << answer << "\n";
 }
 
 int main(void)
