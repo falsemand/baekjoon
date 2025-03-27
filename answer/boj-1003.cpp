@@ -22,7 +22,7 @@ void solution()
 
     cin >> t;
 
-    while(t--)
+    while (t--)
     {
         cin >> n;
         cout << fibo[n].first << " " << fibo[n].second << "\n";
