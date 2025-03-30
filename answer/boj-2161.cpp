@@ -11,7 +11,7 @@ void solution()
 
     for (int i = 1; i <= n; i++)
         q.push(i);
-    
+
     while (!q.empty())
     {
         cout << q.front() << " ";
