@@ -27,7 +27,7 @@ void solution()
             }
         }
 
-        if(flag)
+        if (flag)
             answer += c;
         else
             answer += "?";
@@ -47,3 +47,54 @@ int main(void)
 
     return 0;
 }
+
+/*
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+void solution()
+{
+    int n; cin >> n;
+
+    string answer;
+
+    if (n == 1)
+    {
+        cin >> answer;
+        cout << answer << "\n";
+    }
+
+    else
+    {
+        cin >> answer;
+        n--;
+
+        while (n--)
+        {
+            string s; cin >> s;
+
+            for (int i = 0; i < answer.size(); i++)
+            {
+                if (s[i] != answer[i])
+                    answer[i] = '?';
+            }
+        }
+
+        cout << answer << "\n";
+    }
+}
+
+int main(void)
+{
+    ios::sync_with_stdio(false);
+
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    solution();
+
+    return 0;
+}
+*/
