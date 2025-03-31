@@ -23,7 +23,7 @@ void solution()
         right--;
     }
 
-    if(flag)
+    if (flag)
         cout << 1 << "\n";
     else
         cout << 0 << "\n";
@@ -40,3 +40,38 @@ int main(void)
 
     return 0;
 }
+
+/*
+#include <iostream>
+
+using namespace std;
+
+int main(void)
+{
+    ios::sync_with_stdio(false);
+
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    string s;
+
+    cin >> s;
+
+    int answer = 1;
+    int iIndex = s.length() / 2;
+
+    for (int i = 0; i < iIndex; i++)
+    {
+        if (s[i] != s[s.length() -1 - i])
+        {
+            answer = 0;
+            break;
+        }
+    }
+
+    cout << answer << "\n";
+
+    return 0;
+}
+
+*/
