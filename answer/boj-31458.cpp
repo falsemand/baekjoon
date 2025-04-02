@@ -8,7 +8,7 @@ void solution()
 {
     cin >> t;
 
-    while(t--)
+    while (t--)
     {
         string s;
         cin >> s;
@@ -34,13 +34,13 @@ void solution()
             }
         }
 
-        if(temp > 0)
+        if (temp > 0)
             flag2 = true;
 
-        if(flag2)
+        if (flag2)
             answer = 1;
-        
-        if(flag1)
+
+        if (flag1)
         {
             if (answer == 1)
                 answer = 0;
