@@ -34,7 +34,7 @@ void go(int r, int c, int d)
         }
     }
 
-    if(isClean)
+    if (isClean)
     {
         int dir = d;
         dir += 2;
