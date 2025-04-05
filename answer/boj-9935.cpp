@@ -15,7 +15,7 @@ void solution()
 
     stack<char> st;
 
-    for (int i = 0; i < str.size();i++)
+    for (int i = 0; i < str.size(); i++)
     {
         st.push(str[i]);
 
@@ -39,7 +39,7 @@ void solution()
         }
     }
 
-    if(st.empty())
+    if (st.empty())
     {
         cout << "FRULA\n";
     }
