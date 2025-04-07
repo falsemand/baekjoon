@@ -21,10 +21,10 @@ void solution()
 
     for (int i = n; i >= 1; i--)
     {
-        for(auto p : v[i])
+        for (auto p : v[i])
             pq.push(p);
 
-        if(!pq.empty())
+        if (!pq.empty())
         {
             answer += pq.top();
             pq.pop();
