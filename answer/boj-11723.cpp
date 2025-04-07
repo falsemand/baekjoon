@@ -14,7 +14,7 @@ void solution()
         string cmd;
         cin >> cmd;
 
-        if(cmd.compare("add") == 0)
+        if (cmd.compare("add") == 0)
         {
             int x;
             cin >> x;
@@ -35,7 +35,7 @@ void solution()
             int x;
             cin >> x;
 
-            if(numSet[x] == 1)
+            if (numSet[x] == 1)
                 cout << 1 << "\n";
             else
                 cout << 0 << "\n";
