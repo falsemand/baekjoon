@@ -18,7 +18,7 @@ void solution()
 
     psum[0] = v[0];
     psum[1] = v[0] + v[1];
-    
+
     for (int i = 2; i < n; i++)
     {
         psum[i] = v[i] + psum[i - 1];
