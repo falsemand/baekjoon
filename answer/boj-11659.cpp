@@ -11,7 +11,7 @@ void solution()
     vector<int> v(n + 1, 0);
     vector<int> psum(n + 1, 0);
 
-    for (int i = 1; i <= n;i++)
+    for (int i = 1; i <= n; i++)
         cin >> v[i];
 
     for (int i = 1; i <= n; i++)
