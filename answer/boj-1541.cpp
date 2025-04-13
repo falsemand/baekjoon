@@ -16,7 +16,7 @@ void solution()
     {
         if (s[i] == '+' || s[i] == '-')
         {
-            if(isSub)
+            if (isSub)
             {
                 answer -= num;
                 num = 0;
