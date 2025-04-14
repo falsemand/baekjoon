@@ -15,7 +15,7 @@ void solution()
 
     bool flag = true;
 
-    for (int i = 0; i < n;i++)
+    for (int i = 0; i < n; i++)
     {
         cin >> campus[i];
 
