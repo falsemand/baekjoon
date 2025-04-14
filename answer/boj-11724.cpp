@@ -21,7 +21,7 @@ void solution()
 {
     cin >> n >> m;
 
-    for (int i = 0; i < m;i++)
+    for (int i = 0; i < m; i++)
     {
         int from, to;
 
@@ -32,7 +32,7 @@ void solution()
 
     for (int i = 1; i <= n; i++)
     {
-        if(!visited[i])
+        if (!visited[i])
         {
             dfs(i);
             answer++;
