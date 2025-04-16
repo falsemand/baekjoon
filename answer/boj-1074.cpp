@@ -6,13 +6,13 @@ int answer, n, r, c;
 
 void go(int y, int x, int size)
 {
-    if (y == r &&x == c)
+    if (y == r && x == c)
     {
         cout << answer << "\n";
         return;
     }
 
-    else if (c < x + size &&c >= x &&r < y + size &&r >= y)
+    else if (c < x + size && c >= x && r < y + size && r >= y)
     {
         go(y, x, size / 2);
         go(y, x + size / 2, size / 2);
