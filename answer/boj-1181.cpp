@@ -14,12 +14,11 @@ void solution()
         cin >> v[i];
 
     sort(v.begin(), v.end(), [](string s1, string s2)
-        { 
+         { 
             if (s1.size() == s2.size())
                 return s1 < s2;
 
-            return s1.size() < s2.size();
-        });
+            return s1.size() < s2.size(); });
 
     v.erase(unique(v.begin(), v.end()), v.end());
 
