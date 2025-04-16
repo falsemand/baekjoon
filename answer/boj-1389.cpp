@@ -27,7 +27,7 @@ void solution()
 
         memset(visited, 0, sizeof(int) * 101);
         visited[i] = 1;
-        
+
         while (!q.empty())
         {
             int node = q.front();
