@@ -27,7 +27,7 @@ void solution()
 
         for (int i = 0; i < klass.size(); i++)
         {
-            if(klass[i].first == s)
+            if (klass[i].first == s)
             {
                 mn += klass[i].second;
                 mx += klass[i].second;
@@ -42,9 +42,7 @@ void solution()
     }
 
     sort(klass.begin(), klass.end(), [](pair<string, int> p1, pair<string, int> p2)
-         {
-            return p1.second < p2.second;
-         });
+         { return p1.second < p2.second; });
 
     int left = 0, right = n - 1;
     int cnt = 0;
