@@ -54,13 +54,12 @@ void solution()
 
     vector<pair<string, int>> answer(students.begin(), students.end());
 
-    sort(answer.begin(), answer.end(), [](pair<string, int> p1, pair<string, int> p2) 
-    {
+    sort(answer.begin(), answer.end(), [](pair<string, int> p1, pair<string, int> p2)
+         {
         if(p1.second==p2.second)
             return p1.first < p2.first;
 
-        return p1.second > p2.second;
-    });
+        return p1.second > p2.second; });
 
     for (auto it : answer)
     {
