@@ -49,7 +49,6 @@ void bfs()
             }
         }
     }
-    
 }
 
 void solution()
