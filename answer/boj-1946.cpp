@@ -22,9 +22,7 @@ void solution()
         }
 
         sort(v.begin(), v.end(), [](pair<int, int> p1, pair<int, int> p2)
-            { 
-                return p1.first < p2.first;
-            });
+             { return p1.first < p2.first; });
 
         int answer = 1;
         int interview = v[0].second;
