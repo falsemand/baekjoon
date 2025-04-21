@@ -20,7 +20,7 @@ void solution()
                 break;
             }
 
-            if (x > m *n)
+            if (x > m * n)
             {
                 cout << -1 << "\n";
                 break;
