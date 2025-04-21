@@ -22,14 +22,14 @@ void solution()
 
         if (x == k)
             break;
-            
-        if (x - 1 >= 0  && !visited[x - 1])
+
+        if (x - 1 >= 0 && !visited[x - 1])
         {
             visited[x - 1] = visited[x] + 1;
             q.push(x - 1);
         }
 
-        if (x + 1 < MAX &&!visited[x + 1])
+        if (x + 1 < MAX && !visited[x + 1])
         {
             visited[x + 1] = visited[x] + 1;
             q.push(x + 1);
