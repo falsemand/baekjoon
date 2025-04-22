@@ -6,7 +6,7 @@ typedef long long ll;
 
 ll n;
 
-ll facto(ll x) 
+ll facto(ll x)
 {
     if (x <= 1)
         return 1;
