@@ -10,7 +10,7 @@ void solution()
     {
         cin >> n >> m;
 
-        if (n == 0 &&m == 0)
+        if (n == 0 && m == 0)
             break;
 
         vector<int> cd(n);
