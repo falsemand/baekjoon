@@ -17,9 +17,9 @@ void solution()
         int num;
         cin >> num;
 
-        int* lisIdx = lower_bound(lis, lis + n, num);
+        int *lisIdx = lower_bound(lis, lis + n, num);
 
-        if(*lisIdx == INT_MAX)
+        if (*lisIdx == INT_MAX)
         {
             answer++;
         }
