@@ -19,7 +19,7 @@ void solution()
         ll num;
         cin >> num;
 
-        ll* lisIdx = lower_bound(lis, lis + n, num);
+        ll *lisIdx = lower_bound(lis, lis + n, num);
 
         if (*lisIdx == LONG_MAX)
         {
