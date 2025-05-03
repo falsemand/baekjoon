@@ -12,7 +12,7 @@ void go()
 
     for (int i = 1; i <= d; i++)
     {
-        if(road[i].size() == 0)
+        if (road[i].size() == 0)
             cost[i] = cost[i - 1] + 1;
         else
         {
@@ -28,7 +28,7 @@ void solution()
 {
     cin >> n >> d;
 
-    for (int i = 0; i < n;i++)
+    for (int i = 0; i < n; i++)
     {
         cin >> from >> to >> length;
         road[to].push_back({from, length});
