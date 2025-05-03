@@ -5,7 +5,6 @@ using namespace std;
 int n;
 int tower[500001];
 int reciver[500001];
-stack<pair<int, int>> st;
 
 int findReciver(int cur, int prev)
 {
