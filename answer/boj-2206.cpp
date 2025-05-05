@@ -78,7 +78,7 @@ void solution()
     bfs(n - 1, m - 1);
     last = visited[0][0];
 
-    if (start == 0 &&last == 0)
+    if (start == 0 && last == 0)
         cout << -1 << "\n";
     else
     {
