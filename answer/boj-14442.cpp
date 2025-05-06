@@ -10,7 +10,7 @@ const int dx[4] = {-1, 0, 1, 0};
 
 int bfs(int y, int x)
 {
-    if (y == n - 1 &&x == m - 1)
+    if (y == n - 1 && x == m - 1)
         return 1;
 
     queue<tuple<int, int, int>> q;
@@ -31,7 +31,7 @@ int bfs(int y, int x)
             if (ny < 0 || ny >= n || nx < 0 || nx >= m)
                 continue;
 
-            if (ny == n - 1 &&nx == m - 1)
+            if (ny == n - 1 && nx == m - 1)
                 return visited[layer][y][x] + 1;
 
             if (visited[layer][ny][nx])
