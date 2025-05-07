@@ -11,7 +11,7 @@ void solution()
     cin >> n;
     cin >> start;
 
-    if(n > 5)
+    if (n > 5)
     {
         cout << "Love is open door\n";
     }
