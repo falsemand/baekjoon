@@ -40,7 +40,6 @@ void solution()
             cout << 0 << "\n";
         }
     }
-    
 }
 
 int main(void)
