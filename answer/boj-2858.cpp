@@ -15,7 +15,7 @@ void solution()
             int tempB = (i - 2) * (j - 2);
             int tempR = i * j - tempB;
 
-            if (tempR == r &&tempB == b)
+            if (tempR == r && tempB == b)
             {
                 cout << i << " " << j << "\n";
                 return;
