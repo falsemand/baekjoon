@@ -15,7 +15,7 @@ void solution()
     {
         ll price;
         string name;
-        
+
         cin >> name >> price;
         goods[name] = price;
     }
