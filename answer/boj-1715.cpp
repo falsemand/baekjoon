@@ -33,7 +33,7 @@ void solution()
                 sum += pq.top();
                 pq.pop();
 
-                if(!pq.empty())
+                if (!pq.empty())
                 {
                     pq.push(sum);
                 }
@@ -44,7 +44,6 @@ void solution()
 
         cout << answer << "\n";
     }
-
 }
 
 int main(void)
