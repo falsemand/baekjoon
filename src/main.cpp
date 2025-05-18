@@ -4,33 +4,26 @@ using namespace std;
 
 using ll = long long;
 
-ll answer, n;
+ll answer;
+int n;
+stack<int> st;
 
 void solution()
 {
     cin >> n;
-    vector<ll> v(n);
 
-    for (ll i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        cin >> v[i];
-    }
+        int temp;
+        cin >> temp;
 
-    for (ll i = 0; i < n - 1; i++)
-    {
-        ll cnt = 0;
-
-        for (ll j = i + 1; j < n; j++)
+        while (!st.empty() && st.top() <= temp)
         {
-            if (v[i] <= v[j])
-            {
-                break;
-            }
-
-            cnt++;
+            st.pop();
         }
 
-        answer += cnt;
+        answer += st.size();
+        st.push(temp);
     }
 
     cout << answer << "\n";
