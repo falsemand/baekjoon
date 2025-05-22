@@ -2,14 +2,61 @@
 
 using namespace std;
 
-float w, h;
+int n;
 
 void solution()
 {
-    cin >> w >> h;
-    cout << fixed;
-    cout.precision(1);
-    cout << (w * h) / 2.0f << "\n";
+    cin >> n;
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < 5 * n; j++)
+        {
+            cout << "@";
+        }
+
+        cout << "\n";
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cout << "@";
+        }
+
+        cout << "\n";
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < 5 * n; j++)
+        {
+            cout << "@";
+        }
+
+        cout << "\n";
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cout << "@";
+        }
+
+        cout << "\n";
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cout << "@";
+        }
+
+        cout << "\n";
+    }
 }
 
 int main(void)
