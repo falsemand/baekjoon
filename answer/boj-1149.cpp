@@ -9,7 +9,7 @@ int color[3];
 void solution()
 {
     cin >> n;
-    
+
     dp[0][0] = 0;
     dp[0][1] = 0;
     dp[0][2] = 0;
