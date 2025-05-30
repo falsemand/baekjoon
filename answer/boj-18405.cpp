@@ -25,7 +25,7 @@ void bfs(int virus)
             int ny = y + dy[i];
             int nx = x + dx[i];
 
-            if(ny < 0 || ny >= n || nx < 0 || nx >= n)
+            if (ny < 0 || ny >= n || nx < 0 || nx >= n)
             {
                 continue;
             }
@@ -43,7 +43,7 @@ void solution()
 {
     cin >> n >> k;
 
-    for (int i = 0; i < n;i++)
+    for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
         {
