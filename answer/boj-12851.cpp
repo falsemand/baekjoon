@@ -25,7 +25,7 @@ void bfs()
         {
             if (0 <= next && next <= MAX)
             {
-                if(!visited[next])
+                if (!visited[next])
                 {
                     q.push(next);
                     visited[next] = visited[node] + 1;
@@ -38,7 +38,6 @@ void bfs()
             }
         }
     }
-    
 }
 
 void solution()
