@@ -33,7 +33,7 @@ void solution()
         answer = max(answer, sum);
     }
 
-        cout << answer << "\n";
+    cout << answer << "\n";
 }
 
 int main(void)
