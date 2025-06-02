@@ -11,7 +11,7 @@ void solution()
 
     while (true)
     {
-        if (n *(n + 1) > 2 * s)
+        if (n * (n + 1) > 2 * s)
         {
             n--;
             break;
