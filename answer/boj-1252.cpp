@@ -12,7 +12,7 @@ void solution()
         swap(s1, s2);
     }
 
-    while (s1.size()!=s2.size())
+    while (s1.size() != s2.size())
     {
         s2 = "0" + s2;
     }
