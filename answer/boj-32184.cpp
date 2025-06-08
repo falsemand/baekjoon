@@ -8,7 +8,7 @@ void solution()
 {
     cin >> a >> b;
 
-    if (a % 2 == 0 &&b % 2 != 0)
+    if (a % 2 == 0 && b % 2 != 0)
     {
         cout << (b - a) / 2 + 2 << "\n";
     }
