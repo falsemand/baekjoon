@@ -9,7 +9,7 @@ int answer[10];
 
 void go(int cnt)
 {
-    if(cnt == m)
+    if (cnt == m)
     {
         for (int i = 0; i < m; i++)
         {
