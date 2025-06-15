@@ -9,7 +9,7 @@ void solution()
     vector<int> v;
 
     int temp;
-    
+
     while (cin >> temp)
     {
         v.push_back(temp);
