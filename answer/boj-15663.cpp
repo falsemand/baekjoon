@@ -17,7 +17,7 @@ void go(int cnt)
         }
 
         cout << "\n";
-        
+
         return;
     }
 
@@ -30,7 +30,7 @@ void go(int cnt)
 
         if (numbers[i] == prev)
             continue;
-        
+
         answer[cnt] = numbers[i];
         prev = answer[cnt];
 
