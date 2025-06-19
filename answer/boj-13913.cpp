@@ -54,12 +54,11 @@ void solution()
 
     for (int i : v)
     {
-        cout << i << " " ;
+        cout << i << " ";
     }
 
     cout << "\n";
 }
-
 
 int main(void)
 {
