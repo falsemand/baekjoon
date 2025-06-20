@@ -6,7 +6,7 @@ const int maxValue = 500000;
 
 int answer, n, k, flag;
 int turn = 1;
-int visited[2][maxValue+4];
+int visited[2][maxValue + 4];
 
 void solution()
 {
@@ -45,13 +45,13 @@ void solution()
             int x = q.front();
             q.pop();
 
-            for (int nx : { x + 1, x - 1, x * 2})
+            for (int nx : {x + 1, x - 1, x * 2})
             {
                 if (nx < 0 || nx > maxValue || visited[turn % 2][nx])
                 {
                     continue;
                 }
-                
+
                 visited[turn % 2][nx] = visited[(turn + 1) % 2][x] + 1;
 
                 if (nx == k)
@@ -86,7 +86,6 @@ void solution()
         cout << -1 << "\n";
     }
 }
-
 
 int main(void)
 {
