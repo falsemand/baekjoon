@@ -25,12 +25,11 @@ void go()
 void solution()
 {
     cin >> t;
-    
 
     while (t--)
     {
         cin >> n;
-        
+
         for (int i = 0; i < 2; i++)
         {
             for (int j = 0; j < n; j++)
@@ -42,7 +41,6 @@ void solution()
         go();
     }
 }
-
 
 int main(void)
 {
