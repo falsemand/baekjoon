@@ -21,7 +21,6 @@ void solution()
     cout << answer << "\n";
 }
 
-
 int main(void)
 {
     ios::sync_with_stdio(false);
