@@ -10,7 +10,6 @@ void solution()
     cout << min(t1, t2) << "\n";
 }
 
-
 int main(void)
 {
     ios::sync_with_stdio(false);
