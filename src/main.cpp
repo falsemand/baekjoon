@@ -2,64 +2,66 @@
 
 using namespace std;
 
-const int INF = 987654321;
-int answer = INF, n;
-int a[44];
+int n;
 
-void go(int here)
+const int BASE = 10000;
+const int WIDTH = 4;
+
+struct BigInt 
 {
-    if (here == n + 1)
+    vector<int> digits;
+
+    BigInt(int x = 0) 
     {
-        int sum = 0;
-
-        for (int i = 1; i <= (1 << (n - 1)); i *= 2)
+        while (x) 
         {
-            int cnt = 0;
-
-            for (int j = 1; j <= n; j++)
-            {
-                if (a[j] &i)
-                {
-                    cnt++;
-                }
-            }
-            sum += min(cnt, n - cnt);
+            digits.push_back(x % BASE);
+            x /= BASE;
         }
 
-        answer = min(answer, sum);
-        return;
+        if (digits.empty())
+            digits.push_back(0);
     }
 
-    go(here + 1);
-    a[here] = ~a[here];
-    go(here + 1);
-}
+    void multiply(int x)
+    {
+        int carry = 0;
+        for (int &d : digits)
+        {
+            long long prod = 1LL * d * x + carry;
+            d = prod % BASE;
+            carry = prod / BASE;
+        }
+        while (carry) 
+        {
+            digits.push_back(carry % BASE);
+            carry /= BASE;
+        }
+    }
+
+    void print() const 
+    {
+        int n = digits.size();
+        printf("%d", digits[n - 1]);
+
+        for (int i = n - 2; i >= 0; --i)
+            printf("%0*d", WIDTH, digits[i]);
+
+        printf("\n");
+    }
+};
 
 void solution()
 {
+    int n;
     cin >> n;
 
-    for (int i = 1; i <= n; i++)
-    {
-        string s;
-        cin >> s;
+    BigInt result(1);
 
-        int value = 1;
+    for (int i = 2; i <= n; ++i)
+        result.multiply(i);
 
-        for (int j = 0; j < s.size(); j++)
-        {
-            if (s[j] == 'T')
-            {
-                a[i] |= value;
-            }
-
-            value *= 2;
-        }
-    }
-
-    go(1);
-
-    cout << answer << "\n";
+    result.print();
 }
 
 
